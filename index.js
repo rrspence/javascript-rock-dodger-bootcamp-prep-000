@@ -99,7 +99,7 @@ function createRock(x) {
      * But if the rock *has* reached the bottom of the GAME,
      * we should remove the rock from the DOM
      */
-     
+     ROCKS.shift(rock);
   }
 
   // We should kick of the animation of the rock around here
@@ -119,6 +119,8 @@ function createRock(x) {
  * Finally, alert "YOU LOSE!" to the player.
  */
 function endGame() {
+  
+  window.alert('YOU LOSE!');
 }
 
 function moveDodger(e) {
